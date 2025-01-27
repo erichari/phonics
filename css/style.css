@@ -1,6 +1,10 @@
+img:active{
+    transform: scale(1.02);
+}
 
 .capital{
-    width: 50px;
+    width: 150px;
+    align-items: center;
 }
 .capital:nth-child(1){
 
