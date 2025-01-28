@@ -1,11 +1,53 @@
-img:active{
-    transform: scale(1.02);
+.nav-pills .nav-ABC.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: lightblue;
+}
+.nav-pills .nav-abc.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: lightpink;
+}
+.nav-pills .nav-123.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: lightgreen;
+}
+.nav-pills .nav-phonics.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: lightgoldenrodyellow;
+}
+.tab-content{
+    height: calc(100vh - 130px);
 }
 
-.capital{
-    width: 150px;
-    align-items: center;
+img{
+    width:60%;
 }
-.capital:nth-child(1){
+.capital {
+    animation: fuwafuwa 3s ease-in-out infinite alternate;
+    display: inline-block;
+    /* transition: 1.5s ease-in-out; */
+    margin-top: 15px;
+}
 
+/* .capital:active{
+    animation: pop 2s }
+} */
+
+@keyframes fuwafuwa {
+    0% {
+        transform:translate(0, 0) rotate(-7deg);
+    }
+    50% {
+        transform:translate(0, -7px) rotate(0deg);
+    }
+    100% {
+        transform:translate(0, 0) rotate(7deg);
+    }
 }
+/* @keyframes pop {
+    0% {
+        transform:scale(1.2);
+    }
+    100% {
+        transform:scale(1.0);
+    }
+} */
